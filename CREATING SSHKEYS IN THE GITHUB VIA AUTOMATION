@@ -9,6 +9,7 @@ read token
 cat ~/.ssh/id_rsa.pub
 #if condition to validate weather ssh keys are already present or not
 if [ $? -eq 0 ]
+# above means if key exit, 0 means exit
 then
 	echo "SSH Keys are already present..."
 else	
